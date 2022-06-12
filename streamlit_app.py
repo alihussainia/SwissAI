@@ -31,7 +31,7 @@ uploaded_file = st.file_uploader("Upload your CSV file")
 if uploaded_file is not None:
   features_df = pd.read_csv(uploaded_file)
 
-first_sample_row = features_df.head()
+first_sample_row = features_df[:5]
 st.table(first_sample_row)  
 
 if st.button('Predict'):
