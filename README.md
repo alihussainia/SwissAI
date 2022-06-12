@@ -3,15 +3,17 @@
 <hr></hr>
 This repository contains project files for SwissAI Hackathon organized by Deep Learning Labs.
 
-<h3>Deployed App</h3>
+<h3>Deployed App</h3> 
 <a href="https://share.streamlit.io/alihussainia/swissai/main">Link</a>
 
 <h3>Data: Elliptic Data Set</h3>
+
 The Elliptic Dataset is a graph network of Bitcoin transactions with handcrafted features. All features are constructed using only publicly available information.
 
 The <a href="https://www.kaggle.com/datasets/ellipticco/elliptic-data-set">Elliptic DataSet</a> maps Bitcoin transactions to real entities in two categories:
 
-Legal: exchanges, wallet providers, miners, licit services, etc.
+licit: exchanges, wallet providers, miners, licit services, etc.
+
 Ilicit: scams, malware, terrorist, organization, ransomware, Ponzi shcemes, etc
 
 A given transaction is licit/legal if the entity that generated it was licit.
@@ -24,4 +26,5 @@ There are fewer ilicit (Class 0) transactions than the licit ones. (Class 1) wit
 
 References:
 [1] Elliptic, www.elliptic.co.
+
 [2] M. Weber, G. Domeniconi, J. Chen, D. K. I. Weidele, C. Bellei, T. Robinson, C. E. Leiserson, "Anti-Money Laundering in Bitcoin: Experimenting with Graph Convolutional Networks for Financial Forensics", KDD ’19 Workshop on Anomaly Detection in Finance, August 2019, Anchorage, AK, USA.
