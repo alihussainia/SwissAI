@@ -34,12 +34,11 @@ if uploaded_file is not None:
 st.table(features_df)  
 
 if st.button('Predict'):
-    
     if dataframe is None:
-    st.error("Please Upload Your CSV")
-  else:
-    with st.spinner('File is Processing...'):
-      output = predict_rating(model, features_df)
-      csv = convert_df(output)
-      st.download_button(label="Download Generated Output CSV", file_name='output_data.csv', data=csv, mime='text/csv')
-      st.success('And your file is ready!')
+        st.error("Please Upload Your CSV")
+    else:
+        with st.spinner('File is Processing...'):
+          output = predict_rating(model, features_df)
+          csv = convert_df(output)
+          st.download_button(label="Download Generated Output CSV", file_name='output_data.csv', data=csv, mime='text/csv')
+          st.success('And your file is ready!')
