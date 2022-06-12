@@ -26,17 +26,17 @@ st.write('This is a web app to classify whether a Bitcoin transaction is legal o
         see the prediction.')
 
 # file(s) part
-features_df=None
+dataframe=None
 uploaded_file = st.file_uploader("Upload your CSV file")
 if uploaded_file is not None:
-  features_df = pd.read_csv(uploaded_file)
+  dataframe = pd.read_csv(uploaded_file)
 
 if st.button('Predict'):
     if dataframe is None:
         st.error("Please Upload Your CSV")
     else:
         with st.spinner('File is Processing...'):
-          output = predict_rating(model, features_df)
+          output = predict_rating(model, dataframe)
           csv = convert_df(output)
           st.download_button(label="Download Generated Output CSV", file_name='output_data.csv', data=csv, mime='text/csv')
           st.success('And your file is ready!')
