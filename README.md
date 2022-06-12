@@ -1,4 +1,4 @@
-<h1>Elliptic Bitcoin Classification Project</h1>
+<h1>Elliptic Illicit Bitcoin Transaction Classification Project</h1>
 <n>SwissAI Hackathon by Deep Learning Labs</b>
 <hr></hr>
 This repository contains project files for SwissAI Hackathon organized by Deep Learning Labs.
