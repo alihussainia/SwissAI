@@ -16,8 +16,14 @@ def predict_rating(model, df):
     predictions_data = predict_model(estimator = model, data = df)
     
     return predictions_data[['Label', 'Score']]
-    
+
+@st.cache
+def convert_df(df):
+    # IMPORTANT: Cache the conversion to prevent computation on every rerun
+    return df.to_csv().encode('utf-8')
+
 model = load_model('model/random_forest_v1')
+
 
 st.title('Illicit Transaction Classification Web App')
 st.write('This is a web app to classify whether a Bitcoin transaction is legal or not based on\
