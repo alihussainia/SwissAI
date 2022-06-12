@@ -6,7 +6,7 @@ Created on Sat Jan 22 08:24:00 2022
 @hackathon: Swiss AI
 """
 
-from pycaret.regression import load_model, predict_model
+from pycaret.classification import load_model, predict_model
 import streamlit as st
 import pandas as pd
 
