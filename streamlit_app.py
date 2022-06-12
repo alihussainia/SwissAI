@@ -20,7 +20,7 @@ def predict_rating(model, df):
 @st.cache
 def convert_df(df):
     # IMPORTANT: Cache the conversion to prevent computation on every rerun
-    return df.to_csv().encode('utf-8')
+    return df.to_csv(index=False).encode('utf-8')
 
 model = load_model('model/random_forest_v1')
 
