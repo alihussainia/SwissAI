@@ -6,7 +6,7 @@ This repository contains project files for SwissAI Hackathon organized by Deep L
 <h3>Deployed App</h3>
 <a href="https://share.streamlit.io/alihussainia/swissai/main">Link</a>
 
-<h3>>Data: Elliptic Data Set</h3>
+<h3>Data: Elliptic Data Set</h3>
 The Elliptic Dataset is a graph network of Bitcoin transactions with handcrafted features. All features are constructed using only publicly available information.
 
 The <a href="https://www.groundai.com/project/anti-money-laundering-in-bitcoin-experimenting-with-graph-convolutional-networks-for-financial-forensics/1">Elliptic DataSet</a> maps Bitcoin transactions to real entities in two categories:
