@@ -10,7 +10,7 @@ from pycaret.classification import load_model, predict_model
 import streamlit as st
 import pandas as pd
 
-#with st.echo(code_location='below'):
+@st.cache
 def predict_rating(model, df):
     
     predictions_data = predict_model(estimator = model, data = df)
